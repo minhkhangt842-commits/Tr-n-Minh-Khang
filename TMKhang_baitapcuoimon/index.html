@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMK's Technical Store | Đồ Công Nghệ Đỉnh Cao</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="image/logo.png" alt="TMK Logo" class="brand-logo">
+            <div class="logo-text">TMK's <span>Technical store</span></div>
+        </div>
+        
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="gioithieu.html">Giới thiệu</a></li>
+                <li><a href="dichvu.html">Dịch vụ</a></li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-right">
+            <div class="icons">
+                <i class="fas fa-search"></i>
+                <div class="cart-icon-wrapper" id="open-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </div>
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Nâng Tầm Trải Nghiệm<br>Công Nghệ</h1>
+            <p>Khám phá bộ sưu tập thiết bị mới nhất tại TMK's Technical Store.</p>
+            <button class="btn">Mua Ngay</button>
+        </div>
+    </section>
+
+    <section class="products">
+        <h2>Sản Phẩm Nổi Bật</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="image/Laptop1.png" alt="PC Gaming Ultra" class="product-img">
+                </div>
+                <h3>Laptop Lenovo LOQ</h3>
+                <p class="price">25.000.000đ</p>
+                <button class="add-cart">Thêm vào giỏ</button>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="image/Laptop2.jpg" alt="Bàn phím Cơ RGB" class="product-img">
+                </div>
+                <h3>Laptop gaming Nitro V</h3>
+                <p class="price">23.500.000đ</p>
+                <button class="add-cart">Thêm vào giỏ</button>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="image/Laptop3.png" alt="Chuột Không Dây Pro" class="product-img">
+                </div>
+                <h3>Predator Helios Neo</h3>
+                <p class="price">99.999.999đ</p>
+                <button class="add-cart">Thêm vào giỏ</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="image/dienthoai1.jpg" alt="iPad Pro M2" class="product-img">
+                </div>
+                <h3>Samsung Reno15F</h3>
+                <p class="price">18.000.000đ</p>
+                <button class="add-cart">Thêm vào giỏ</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2>Giỏ hàng của bạn</h2>
+                <span class="close-cart">&times;</span>
+            </div>
+            <div id="cart-items">
+                <p style="text-align: center; color: #64748b; padding: 20px;">Giỏ hàng trống</p>
+            </div>
+            <div class="cart-footer">
+                <div class="total-price">
+                    <span>Tổng tiền:</span>
+                    <span id="total-amount">0đ</span>
+                </div>
+                <button class="btn btn-checkout">Thanh Toán Ngay</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 TMK's Technical Store. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
