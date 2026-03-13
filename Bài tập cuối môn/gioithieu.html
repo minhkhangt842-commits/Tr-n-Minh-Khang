@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu | TMK's Technical Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="about-page">
+
+    <header>
+        <div class="logo">
+            <img src="image/logo.png" alt="TMK Logo" class="brand-logo">
+            <div class="logo-text">TMK's <span>Technical store</span></div>
+        </div>
+        
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="gioithieu.html">Giới thiệu</a></li>
+                <li><a href="#">Dịch vụ</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-right">
+            <div class="icons">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="about-container">
+        <section class="about-content">
+            <div class="about-text">
+                <p>
+                    <span class="highlight">TMK's Technical Store</span> là hệ thống bán lẻ thiết bị chính hãng uy tín. Chúng tôi tự hào mang đến sản phẩm đột phá với giá thành tối ưu nhất cho cộng đồng công nghệ Việt.
+                </p>
+            </div>
+
+            <div class="about-features">
+                <div class="feature-item">
+                    <i class="fas fa-microchip"></i>
+                    <h3>Công Nghệ</h3>
+                    <p>Cập nhật đời mới nhất.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Chính Hãng</h3>
+                    <p>Cam kết 100% chất lượng.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-headset"></i>
+                    <h3>Hỗ Trợ</h3>
+                    <p>Kỹ thuật chuyên sâu 24/7.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="about-footer">
+            <a href="index.html" class="btn-back">
+                <i class="fas fa-arrow-left"></i> Quay lại Trang chủ
+            </a>
+        </div>
+    </div>
+
+    <script>
+        const menuToggle = document.getElementById('mobile-menu');
+        const navMenu = document.getElementById('nav-menu');
+        const icon = menuToggle.querySelector('i');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+    </script>
+</body>
+</html>

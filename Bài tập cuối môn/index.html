@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMK's Technical Store | Đồ Công Nghệ Đỉnh Cao</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="image/logo.png" alt="TMK Logo" class="brand-logo">
+            <div class="logo-text">TMK's <span>Technical store</span></div>
+        </div>
+        
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="gioithieu.html">Giới thiệu</a></li>
+                <li><a href="dichvu.html">Dịch vụ</a></li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-right">
+            <div class="icons">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Nâng Tầm Trải Nghiệm<br>Công Nghệ</h1>
+            <p>Khám phá bộ sưu tập thiết bị mới nhất tại TMK's Technical Store.</p>
+            <button class="btn">Mua Ngay</button>
+        </div>
+    </section>
+
+    <section class="products">
+        <h2>Sản Phẩm Nổi Bật</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="image/Laptop1.png" alt="PC Gaming Ultra" class="product-img">
+                </div>
+                <h3>PC Gaming Ultra</h3>
+                <p class="price">25.000.000đ</p>
+                <button class="add-cart">Thêm vào giỏ</button>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="image/Laptop2.jpg" alt="Bàn phím Cơ RGB" class="product-img">
+                </div>
+                <h3>Bàn phím Cơ RGB Pro Wireless</h3>
+                <p class="price">1.500.000đ</p>
+                <button class="add-cart">Thêm vào giỏ</button>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="image/Laptop3.png" alt="Chuột Không Dây Pro" class="product-img">
+                </div>
+                <h3>Chuột Không Dây Pro</h3>
+                <p class="price">850.000đ</p>
+                <button class="add-cart">Thêm vào giỏ</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="image/dienthoai1.jpg" alt="iPad Pro M2" class="product-img">
+                </div>
+                <h3>iPad Pro M2 12.9 inch</h3>
+                <p class="price">21.000.000đ</p>
+                <button class="add-cart">Thêm vào giỏ</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 TMK's Technical Store. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('mobile-menu');
+        const navMenu = document.getElementById('nav-menu');
+        const icon = menuToggle.querySelector('i');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+            document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : 'initial';
+        });
+
+        document.querySelectorAll('nav ul li a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                icon.classList.add('fa-bars');
+                icon.classList.remove('fa-times');
+                document.body.style.overflow = 'initial';
+            });
+        });
+    </script>
+</body>
+</html>
